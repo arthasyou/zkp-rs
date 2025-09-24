@@ -226,6 +226,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "p3-goldilocks"
+version = "0.3.0"
+dependencies = [
+ "num-bigint",
+ "p3-dft",
+ "p3-field",
+ "p3-mds",
+ "p3-poseidon2",
+ "p3-symmetric",
+ "p3-util",
+ "paste",
+ "rand",
+ "serde",
+]
+
+[[package]]
 name = "p3-interpolation"
 version = "0.3.0"
 dependencies = [
@@ -252,6 +268,28 @@ dependencies = [
 [[package]]
 name = "p3-maybe-rayon"
 version = "0.3.0"
+
+[[package]]
+name = "p3-mds"
+version = "0.3.0"
+dependencies = [
+ "p3-dft",
+ "p3-field",
+ "p3-symmetric",
+ "p3-util",
+ "rand",
+]
+
+[[package]]
+name = "p3-poseidon2"
+version = "0.3.0"
+dependencies = [
+ "p3-field",
+ "p3-mds",
+ "p3-symmetric",
+ "p3-util",
+ "rand",
+]
 
 [[package]]
 name = "p3-sha256"
@@ -515,6 +553,7 @@ dependencies = [
  "p3-dft",
  "p3-field",
  "p3-fri",
+ "p3-goldilocks",
  "p3-sha256",
  "p3-uni-stark",
  "serde",

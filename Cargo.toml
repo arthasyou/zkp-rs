@@ -19,3 +19,16 @@ p3-uni-stark = { path = "third_party/plonky3/uni-stark" }
 p3-fri = { path = "third_party/plonky3/fri" }
 p3-dft = { path = "third_party/plonky3/dft" }
 p3-challenger = { path = "third_party/plonky3/challenger" }
+p3-goldilocks = { path = "third_party/plonky3/goldilocks" }
+
+[[example]]
+name = "substring_proof"
+path = "examples/substring_proof.rs"
+
+[[example]]
+name = "stark_proof_demo"
+path = "examples/stark_proof_demo.rs"
+
+[[bin]]
+name = "demo"
+path = "src/bin/demo.rs"
