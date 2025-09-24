@@ -2,5 +2,20 @@
 name = "zkp-rs"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
+thiserror = "2.0.16"
+serde = { version = "1.0.226", features = ["derive"] }
+serde_json = "1.0.104"
+bincode = "2.0.1"
+hex = "0.4"
+sha2 = "0.10"
+
+# plonky3 dependencies
+p3-field = { path = "third_party/plonky3/field" }
+p3-sha256 = { path = "third_party/plonky3/sha256" }
+p3-uni-stark = { path = "third_party/plonky3/uni-stark" }
+p3-fri = { path = "third_party/plonky3/fri" }
+p3-dft = { path = "third_party/plonky3/dft" }
+p3-challenger = { path = "third_party/plonky3/challenger" }
