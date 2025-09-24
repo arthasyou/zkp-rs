@@ -1,7 +1,7 @@
+pub mod backend;
 pub mod circuits;
-pub mod constants;
+pub mod config;
+pub mod core;
 pub mod error;
-pub mod gadgets;
-pub mod proofs;
-pub mod types;
+pub mod hash;
 pub mod utils;
